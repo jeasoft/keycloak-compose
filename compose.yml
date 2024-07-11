@@ -10,7 +10,7 @@ services:
     command: ["start-dev", "--import-realm"]
     restart: unless-stopped
     environment:
-      KC_DB: ${PG_DBNAME}
+      KC_DB: postgres
       KC_DB_USERNAME: ${PG_DBUSER}
       KC_DB_PASSWORD: ${PG_DBPASSWORD}
       KC_DB_URL: "jdbc:postgresql://${PG_HOSTNAME}:${PG_PORT}/${PG_DBNAME}"
