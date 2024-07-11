@@ -1,8 +1,9 @@
-### [Keycloak](https://github.com/keycloak/keycloak) with [PostgreSQL](https://www.postgresql.org), which includes Keycloak's monitoring using [Prometheus](https://github.com/prometheus/prometheus) and [Grafana](https://github.com/grafana/grafana)
+### [Keycloak](https://github.com/keycloak/keycloak) with [PostgreSQL](https://www.postgresql.org), which includes Keycloak's monitoring using [Prometheus](https://github.com/prometheus/prometheus) and [Grafana](https://github.com/grafana/grafana). This fork remove the PostgreSQL Docker image and added some settings to use a remote PostgreSQL server
 
 1. Requires [docker](https://docs.docker.com/get-docker/) and [compose](https://docs.docker.com/compose/install/)
-2. Parameterized using variables in the [`.env`](.env) file
-3. Up the project using command:
+2. A PostgreSQL Server installed (local or remote) 
+3. Parameterized using variables in the [`.env`](.env) file
+4. Up the project using command:
 ```
 docker compose up -d
 ```
